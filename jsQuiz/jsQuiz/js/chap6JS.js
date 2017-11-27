@@ -133,7 +133,7 @@ function winLose () {
       questElement.innerHTML = 'Too bad! Study more to relieve the pain!';
     }
   } else {
-    if ((clickedColor === currentCorrect) || (this.style.backgroundColor = 'rgb(250, 255, 250)')) {
+    if ((clickedColor === currentCorrect) || (this.style.backgroundColor == 'rgb(250, 255, 250)')) {
       this.style.backgroundColor = 'rgb(250, 255, 250)';
       this.style.color = '#00bb00';
       this.style.border = 'solid #00bb00 3px';
@@ -142,7 +142,7 @@ function winLose () {
       this.style.paddingBottom = '5%';
       document.querySelectorAll('.win')[0].style.display = 'inline';
       document.querySelectorAll('.win')[1].style.display = 'inline';
-      if ((this.innerHTML === currentAnswers[0]) || (this.style.color === '#00bb00')) {
+      if (this.innerHTML === currentAnswers[0]) {
         this.textContent = altFactsArray[0];
       } else if (this.innerHTML === currentAnswers[1]) {
         this.textContent = altFactsArray[1];
