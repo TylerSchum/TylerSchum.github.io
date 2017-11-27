@@ -142,7 +142,7 @@ function winLose () {
       this.style.paddingBottom = '5%';
       document.querySelectorAll('.win')[0].style.display = 'inline';
       document.querySelectorAll('.win')[1].style.display = 'inline';
-      if ((this.innerHTML === currentAnswers[0]) || (this.style.color === '#00bb00')) {
+      if (this.innerHTML === currentAnswers[0]) {
         this.textContent = altFactsArray[0];
       } else if (this.innerHTML === currentAnswers[1]) {
         this.textContent = altFactsArray[1];
