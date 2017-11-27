@@ -133,7 +133,7 @@ function winLose () {
       questElement.innerHTML = 'Too bad! Study more to relieve the pain!';
     }
   } else {
-    if ((clickedColor === currentCorrect) || (this.style.paddingTop == '5%')) {
+    if ((clickedColor === currentCorrect) || (this.style.backgroundColor = 'rgb(250, 255, 250)')) {
       this.style.backgroundColor = 'rgb(250, 255, 250)';
       this.style.color = '#00bb00';
       this.style.border = 'solid #00bb00 3px';
