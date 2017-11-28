@@ -23,7 +23,7 @@ var chap7Questions = [
   //10
   'Which of the following statements creates an empty object with the name <strong>registry</strong>?',
   //11
-  'Which of the following statements adds a new property named <strong>squareFeet</strong> to an object named <strong>RealEstate</strong>?',
+  'Which of the following statements adds a new property named <strong>squFt</strong> to an object named <strong>RealEst</strong>?',
   //12
   'A property whose value is itself an object is known as a(n) _______.',
   //13
@@ -58,13 +58,13 @@ var chap7Answers = [
   //10
   ['var registry;', 'var registry = {};', 'var registry = \"\";', 'var registry = [];'],
   //11
-  ['var RealEstate.squareFeet;', 'RealEstate.squareFeet = \"\";', 'var squareFeet.RealEstate;', 'squareFeet.RealEstate = \"\"'],
+  ['var RealEst.squFt;', 'RealEst.squFt = \"\";', 'var squFt.RealEst;', 'squFt.RealEst = \"\"'],
   //12
   ['sub-property', 'instance', 'constructor', 'sub-object'],
   //13
   ['founder', 'members.founder', 'members[\"founder\"]', 'members[0]'],
   //14
-  ['calcTotal: calculateTotal', 'calcTotal: calculateTotal()', 'calcTotal: function(claculateTotal)', 'calcTotal: function(claculateTotal())'],
+  ['calcTotal: calculateTotal', 'calcTotal: calculateTotal()', 'calcTotal: function( claculateTotal )', 'calcTotal: function( claculateTotal() )'],
   //15
   ['default', 'origination', 'prototype', 'source'],
   //Custom
@@ -93,7 +93,7 @@ var chap7Correct = [
   //10
   'var registry = {};',
   //11
-  'RealEstate.squareFeet = \"\";',
+  'RealEst.squFt = \"\";',
   //12
   'sub-object',
   //13
@@ -231,7 +231,7 @@ function winLose () {
       this.style.backgroundColor = 'rgb(250, 255, 250)';  // --------  Right Answer -----------------------------
       this.style.color = '#00bb00';
       this.style.border = 'solid #00bb00 3px';            // change square style to reflect correct answer
-      this.style.fontSize = '20px';
+      this.style.fontSize = '1.5em';
       this.style.paddingTop = '5%';
       this.style.paddingBottom = '5%';
       document.querySelectorAll('.win')[0].style.display = 'inline';   // displays next and redo buttons
