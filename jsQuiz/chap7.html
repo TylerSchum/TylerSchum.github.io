@@ -15,7 +15,7 @@ Tyler Schum
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-default navbar-static-top">
+<!-- <nav class="navbar navbar-default navbar-static-top">
   <div class="container">
     <ul class="nav nav-tabs">
       <li role="presentation"><a href="index.html">Chap 1</a></li>
@@ -26,6 +26,29 @@ Tyler Schum
       <li role="presentation"><a href="chap6.html">Chap 6</a></li>
       <li role="presentation" class="active"><a href="chap7.html">Chap 7</a></li>
     </ul>
+  </div>
+</nav> -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a <a href="index.html">Chap 1</a></li>
+        <li role="presentation"><a href="chap2.html">Chap 2</a></li>
+        <li role="presentation"><a href="chap3.html">Chap 3</a></li>
+        <li role="presentation"><a href="chap4.html">Chap 4</a></li>
+        <li role="presentation"><a href="#">Chap 5</a></li>
+        <li role="presentation"><a href="chap6.html">Chap 6</a></li>
+        <li role="presentation" class="active"><a href="chap7.html">Chap 7</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 <header>
@@ -39,7 +62,7 @@ Tyler Schum
   <span id='message'>Question #</span>
 </div>
 <h2 id='question'></h2>
-<div class="bigContainer">
+<div class="container">
   <button id='redo' class='win'>Redo</button>
   <button id='next' class='win'>Next</button>
 </div>
@@ -49,7 +72,7 @@ Tyler Schum
   <div class='square'></div>
   <div class='square'></div>
 </div>
-<div id='buttons'>
+<div id='container'>
   <button class='mode glyphicon glyphicon-backward'></button>
   <button class='mode glyphicon glyphicon-forward'></button>
 </div>
