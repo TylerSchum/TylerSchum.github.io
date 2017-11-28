@@ -28,15 +28,15 @@ body {
   -o-transition: all .4s ease-in,font-size .1s ease-in, padding-top .1s ease;
 }
 
-#container {
+.myContainer {
   max-width: 600px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 header {
   margin: 0;
-  margin-top: -30px;
+  margin-top: -40px;
   background-color: steelblue;
   padding: 20px 0;
   transition: all .3s ease-in;
@@ -85,7 +85,7 @@ h2 {
   width: 100%;
   text-align: center;
   color: black;
-  margin-top: -12px;
+  margin-top: -15px;
 }
 
 .selected {
@@ -137,12 +137,12 @@ button:hover {
   padding: 5px;
   display: none;
   font-size: 20px;
-  margin-top: 4px;
-  margin-left: 2%;
+  margin: 0 auto;
+  width: 46%;
+  margin: 1.66%;
 }
 
 #redo {
-  margin-left: 38.4%;
 }
 
 #next {
@@ -159,8 +159,7 @@ button:hover {
 }
 
 .mode{
-  font-size: 24px;
-  margin-top: 5px;
+  font-size: 20px;
   margin-left: 28%;
   padding: 5px;
   border-radius: 5px;
@@ -181,3 +180,9 @@ p{
   bottom: 0;
   text-align: right;
 }
+
+
+/*@media only screen and (max-width: 760px) {
+  .win {
+
+  }*/
