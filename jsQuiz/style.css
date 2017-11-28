@@ -109,7 +109,7 @@ h2 {
 #reset {
   height: 70%;
   font-size: 1.4em;
-  width: 20%;
+  width: 30%;
   border-radius: 5px;
 }
 
@@ -223,5 +223,13 @@ p{
     padding: 5px;
     font-weight: 700;
     font-size: 1em;
+  }
+
+  #reset {
+    font-size: .8em;
+  }
+
+  #message {
+    font-size: 1.4em;
   }
 }
