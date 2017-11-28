@@ -70,11 +70,7 @@ h2 {
   width: 30%;
   color: steelblue;
   font-weight: 400;
-  font-size: 20px;
-}
-
-#reset {
-  width: 35%;
+  font-size: 2em;
 }
 
 .navbar {
@@ -91,19 +87,30 @@ h2 {
 
 .mode{
   font-size: 20px;
-  width: 5%;
-  padding: 5px;
+  padding: 5px, 0, 300px;
   border-radius: 5px;
   width: 10%;
+  height: 95%;
+}
+
+.mode:hover, .mode:focus, #reset:hover, #reset:focus {
+  background-color: white;
+  color: rgb(60,90,120);
 }
 
 #stripe {
   background-color: white;
-  height: 34px;
+  height: 40px;
   width: 100%;
   text-align: center;
   color: black;
-  margin-top: -15px;
+}
+
+#reset {
+  height: 70%;
+  font-size: 1.4em;
+  width: 20%;
+  border-radius: 5px;
 }
 
 .selected {
