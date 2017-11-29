@@ -85,11 +85,11 @@ var chap7Correct = [
   //6
   'toLocaleString()',
   //7
-  'To convert a number that will be displayed to a user',
+  'to convert a number that will be displayed to a user',
   //8
   'floor()',
   //9
-  'Math.round(39.75)',
+  'Math.round(39.75);',
   //10
   'var registry = {};',
   //11
