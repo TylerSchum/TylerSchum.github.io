@@ -171,7 +171,7 @@ function pickQuestion(){
 function winLose () {
   var clickedColor = this.innerHTML;
   var altFactsArray = altFacts[counter];
-  if (counter === chap7Questions.length -1) { // checks if the counter is at the final question
+  if (counter === chap6Questions.length -1) { // checks if the counter is at the final question
     if (clickedColor === currentAnswers[0]) {       // sets custom answers
       questElement.innerHTML = 'More practice for you!';
     } else if (clickedColor === currentAnswers[1]) {
