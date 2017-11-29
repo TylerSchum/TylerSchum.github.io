@@ -21,6 +21,7 @@ body {
   border: solid steelblue 3px;
   float: left;
   margin: 1.66%;
+  box-shadow: 3px 3px 1px steelblue;
   border-radius: 20px;
   transition: all .4s ease-in, font-size .1s ease, padding-top .1s ease, box-shadow .1s ease;
   -webkit-transition: all .4s ease-in, font-size .1s ease-in, padding-top .1s ease, box-shadow .1s ease;;
@@ -30,8 +31,11 @@ body {
 }
 
 .square:hover {
-  box-shadow: 3px 3px 1px steelblue;
   cursor: pointer;
+}
+
+.square:active {
+  box-shadow: none;
 }
 
 .myContainer {

@@ -171,7 +171,7 @@ function pickQuestion(){
 function winLose () {
   var clickedColor = this.innerHTML;
   var altFactsArray = altFacts[counter];
-  if (counter === chap6Questions.length -1) { // checks if the counter is at the final question
+  if (counter === chap7Questions.length -1) { // checks if the counter is at the final question
     if (clickedColor === currentAnswers[0]) {       // sets custom answers
       questElement.innerHTML = 'More practice for you!';
     } else if (clickedColor === currentAnswers[1]) {
@@ -187,6 +187,7 @@ function winLose () {
       this.style.color = '#00bb00';
       this.style.border = 'solid #00bb00 3px';            // change square style to reflect correct answer
       this.style.fontSize = '1.5em';
+      this.style.boxShadow = 'none';
       this.style.paddingTop = '5%';
       this.style.paddingBottom = '5%';
       document.querySelectorAll('.win')[0].style.display = 'inline';   // displays next and redo buttons
@@ -205,6 +206,7 @@ function winLose () {
       this.style.color = '#FF0000';
       this.style.border = 'solid #ff7777 3px';              //  change square style to reflect wrong answer
       this.style.fontSize = '20px';
+      this.style.boxShadow = 'none';
       this.style.paddingTop = '5%';
       this.style.paddingBottom = '5%';
       if (this.innerHTML === currentAnswers[0]) { // check which answer was clicked, and displays the corresponding explanation
@@ -225,6 +227,7 @@ function resetStyles(){ // resets all squares' styles to the default design
     squares[i].style.backgroundColor = '';
     squares[i].style.color = '';
     squares[i].style.border = '';
+    squares[i].style.boxShadow = '';
     squares[i].style.paddingTop = '';
     squares[i].style.paddingBottom = '';
     squares[i].style.fontSize = '';
