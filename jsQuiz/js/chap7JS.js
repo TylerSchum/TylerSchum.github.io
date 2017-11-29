@@ -29,7 +29,7 @@ var chap7Questions = [
   //13
   'Given the object definition: var members = {founder: \"Luis\"}; which statement references the value of the founder property using an associative array?',
   //14
-  'Which statement declares a method named <strong>calcTotal</strong> and sets its value to the existing <strong>calculateTotal</strong() function?',
+  'Which statement declares a method named <strong>calcTotal</strong> and sets its value to the existing <strong>calculateTotal</strong>() function?',
   //15
   'The built-in property that specifies the constructor from which an object was extended is called the _______ property.',
   //Custom
