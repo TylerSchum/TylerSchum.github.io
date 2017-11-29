@@ -139,13 +139,13 @@ var altFacts = [
   ['There is no built-in value() function.', 'There is no built-in integer() function.', 'There is no built-in isNumber()', 'The isNaN() function determines whether a value is NaN or not.']
 ];
 
-var squares = document.querySelectorAll('.square');
-var messageDisplay = document.querySelector('#message');
-var resetButton = document.querySelector('#reset');
-var modeButtons = document.querySelectorAll('.mode');
-var header = document.querySelector('header');
-var questElement = document.querySelector('#question');
-var redoButton = document.getElementById('redo');
+var squares = document.querySelectorAll('.square'); // The answer divs on page
+var messageDisplay = document.querySelector('#message'); // Question # display on page
+var resetButton = document.querySelector('#reset'); // Start Over button
+var modeButtons = document.querySelectorAll('.mode'); // Back/Skip buttons
+var questElement = document.querySelector('#question'); // h2 containing the question
+var redoButton = document.getElementById('redo'); // redo button after selecting right answer
+var nextButton = document.getElementById('next');  // next button after selecting right answer
 var currentQuestion;
 var currentAnswers;
 var currentCorrect;
@@ -186,7 +186,7 @@ function winLose () {
       this.style.backgroundColor = 'rgb(250, 255, 250)';  // --------  Right Answer -----------------------------
       this.style.color = '#00bb00';
       this.style.border = 'solid #00bb00 3px';            // change square style to reflect correct answer
-      this.style.fontSize = '20px';
+      this.style.fontSize = '1.5em';
       this.style.paddingTop = '5%';
       this.style.paddingBottom = '5%';
       document.querySelectorAll('.win')[0].style.display = 'inline';   // displays next and redo buttons
@@ -271,10 +271,10 @@ function skip(){ // goes to next question
 // ------------ Event Listeners --------------------------------------
 function createEventListeners() {
 // Next button
-  if (document.getElementById('next').addEventListener) {
-    document.getElementById('next').addEventListener('click', nextQuestion, false);
-  } else if (document.getElementById('next').attachEvent) {
-    document.getElementById('next').attachEvent('onclick', nextQuestion);
+  if (nextButton.addEventListener) {
+    nextButton.addEventListener('click', nextQuestion, false);
+  } else if (nextButton.attachEvent) {
+    nextButton.attachEvent('onclick', nextQuestion);
   }
   // redo button
   if (redoButton.addEventListener) {
