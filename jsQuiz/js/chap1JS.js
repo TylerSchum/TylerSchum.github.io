@@ -117,7 +117,7 @@ var altFacts = [
 //6
   ['The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.', 'The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.', 'The <html> element defines the whole document.', 'The <script> element either contains scripting statements, or it points to an external script file through the src attribute.'],
 //7
-  ['Topology typically concerns the placement of parts and how they are arranged.', 'A double-system architecture would be the layering of two separate systems that interect with each other to achieve the same goal.', 'The two-tier system consists of a client and a server.', 'A wide area network is a computer network in which the computers connected may be far apart, generally having a radius of half a mile or more.']
+  ['Topology typically concerns the placement of parts and how they are arranged.', 'A double-system architecture would be the layering of two separate systems that interect with each other to achieve the same goal.', 'The two-tier system consists of a client and a server.', 'A wide area network is a computer network in which the computers connected may be far apart, generally having a radius of half a mile or more.'],
 //8
   ['The server locates records that match a request', 'The server handles heavy processing, such as calculations.', 'The server handles data storage.', 'The client provides the interface to the user'],
 //9
@@ -134,7 +134,7 @@ var altFacts = [
   ['document.write() will change what is written in the document object.', 'document.writeIn() will change what is written in the document object, and also add a new line after each statement.', 'window.alert() will create a dialog box with an OK button.', 'window.popup() is not a method in javascript.'],
 //15
   ['There is no PDATA to concern with in JavaScript', 'Character Data (CDATA) is a section of an HTML document that is not interpreted as markup.', 'Parsed Character Data (PCDATA) is a section of an HTML document that is interpreted as markup.', 'There is no CPDATA to concern with in JavaScript.']
-]
+];
 
 var squares = document.querySelectorAll('.square'); // The answer divs on page
 var messageDisplay = document.querySelector('#message'); // Question # display on page
