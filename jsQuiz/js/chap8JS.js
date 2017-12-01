@@ -278,7 +278,11 @@ function winLose() {
             this.style.color = '#00bb00';
             this.style.border = 'solid #00bb00 3px';            // change square style to reflect correct answer
             if (document.documentElement.clientWidth < 500) {   // media query to change font-size based on viewport
-                this.style.fontSize = '1.3em';
+                if (document.documentElement.clientWidth < 361) {
+                    this.style.fontSize = '1.2em';
+                } else {
+                    this.style.fontSize = '1.3em';
+                }
             } else {
                 this.style.fontSize = '1.6em';
             }
@@ -300,8 +304,12 @@ function winLose() {
             this.style.backgroundColor = 'rgb(255, 230, 230)';    // -------- Wrong Answer --------------------------------
             this.style.color = '#FF0000';
             this.style.border = 'solid #ff7777 3px';              //  change square style to reflect wrong answer
-            if (document.documentElement.clientWidth < 500) {     // media query to change font-size based on viewport
-                this.style.fontSize = '1.4em';
+            if (document.documentElement.clientWidth < 500) {   // media query to change font-size based on viewport
+                if (document.documentElement.clientWidth < 361) {
+                    this.style.fontSize = '1.2em';
+                } else {
+                    this.style.fontSize = '1.3em';
+                }
             } else {
                 this.style.fontSize = '1.6em';
             }
