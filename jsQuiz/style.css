@@ -208,8 +208,9 @@ p{
 
 @media all and (max-width: 500px) {
   .squares {
-    font-size: 5vw;
+    font-size: .5em;
     margin-top: none;
+    padding-top: 1%
   }
 
   .myContainer {

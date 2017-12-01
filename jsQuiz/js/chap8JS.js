@@ -169,7 +169,7 @@ var altFacts = [
     'Brackets enclose an array of data.'],
 //4
     ['search() is a method of the String class for searching for a match between a regular expression and this String object.',
-    'There is no subexpression() method. substring() is a method of the String class for extracting part of a string without changing the initial value.',
+    'There is no subexpression() method.',
     'The test() method executes a search for a match between a regular expression and a specified string.',
     'There is no class() method.'],
 //5
@@ -277,9 +277,13 @@ function winLose() {
             this.style.backgroundColor = 'rgb(250, 255, 250)';  // --------  Right Answer -----------------------------
             this.style.color = '#00bb00';
             this.style.border = 'solid #00bb00 3px';            // change square style to reflect correct answer
-            this.style.fontSize = '1.5em';
+            if (document.documentElement.clientWidth < 500) {   // media query to change font-size based on viewport
+                this.style.fontSize = '1.3em';
+            } else {
+                this.style.fontSize = '1.6em';
+            }
             this.style.boxShadow = 'none';
-            this.style.paddingTop = '5%';
+            this.style.paddingTop = '1%';
             this.style.paddingBottom = '5%';
             document.querySelectorAll('.win')[0].style.display = 'inline';   // displays next and redo buttons
             document.querySelectorAll('.win')[1].style.display = 'inline';
@@ -296,9 +300,13 @@ function winLose() {
             this.style.backgroundColor = 'rgb(255, 230, 230)';    // -------- Wrong Answer --------------------------------
             this.style.color = '#FF0000';
             this.style.border = 'solid #ff7777 3px';              //  change square style to reflect wrong answer
-            this.style.fontSize = '20px';
+            if (document.documentElement.clientWidth < 500) {     // media query to change font-size based on viewport
+                this.style.fontSize = '1.4em';
+            } else {
+                this.style.fontSize = '1.6em';
+            }
             this.style.boxShadow = 'none';
-            this.style.paddingTop = '5%';
+            this.style.paddingTop = '1%';
             this.style.paddingBottom = '5%';
             if (this.innerHTML === currentAnswers[0]) { // check which answer was clicked, and displays the corresponding explanation
                 this.textContent = altFactsArray[0];
