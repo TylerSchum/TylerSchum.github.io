@@ -83,6 +83,7 @@ h2 {
   color: steelblue;
   font-weight: 400;
   font-size: 2em;
+  margin-left: 15%;
 }
 
 .navbar {
@@ -119,14 +120,11 @@ h2 {
 }
 
 #reset {
-  height: 70%;
+  height: 68%;
   font-size: 1.4em;
-  width: 30%;
   border-radius: 5px;
-  margin-left: 0;
-  padding-top: 2px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .selected {
@@ -248,5 +246,6 @@ p{
 
   #message {
     font-size: 1.2em;
+    margin-left: 6%;
   }
 }
