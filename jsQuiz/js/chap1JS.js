@@ -35,37 +35,85 @@ var chap1Questions = [
 
 var chap1Answers = [
 //1
-  ['web page', 'URI', 'link', 'network'],
+  ['web page', 
+  'URI', 
+  'link', 
+  'network'],
 //2
-  ['U.S. Department of Defense', 'World Wide Web Consortium', 'Stanford University', 'United Nations'],
+  ['U.S. Department of Defense', 
+  'World Wide Web Consortium', 
+  'Stanford University', 
+  'United Nations'],
 //3
-  ['HTML', 'SGML', 'XML', 'CSS'],
+  ['HTML', 
+  'SGML', 
+  'XML', 
+  'CSS'],
 //4
-  ['XHTML', 'SGML', 'XML', 'CSS'],
+  ['XHTML', 
+  'SGML', 
+  'XML', 
+  'CSS'],
 //5
-  ['independent', 'empty', 'permanent', 'constant'],
+  ['independent', 
+  'empty', 
+  'permanent', 
+  'constant'],
 //6
-  ['head', 'body', 'html', 'script'],
+  ['head', 
+  'body', 
+  'html', 
+  'script'],
 //7
-  ['mainframe topology', 'double-system architecture', 'two-tier system', 'wide area network'],
+  ['mainframe topology', 
+  'double-system architecture', 
+  'two-tier system', 
+  'wide area network'],
 //8
-  ['locating records that match a request', 'heavy processing, such as calculations', 'data storage', 'the presentation of an interface to the user'],
+  ['locating records that match a request', 
+  'heavy processing, such as calculations', 
+  'data storage', 
+  'the presentation of an interface to the user'],
 //9
-  ['Processing and calculations', 'Reading and writing of information to the data storage tier', 'The return of any information to the data storage tier', 'Data storage'],
+  ['Processing and calculations', 
+  'Reading and writing of information to the data storage tier', 
+  'The return of any information to the data storage tier', 
+  'Data storage'],
 //10
-  ['Document.write()', 'document.write()', 'document.Write()', 'Document.Write()'],
+  ['Document.write()', 
+  'document.write()', 
+  'document.Write()', 
+  'Document.Write()'],
 //11
-  ['$InterestRate', '2QInterest Rate', 'interestRate', '_interestRate'],
+  ['$InterestRate', 
+  '2QInterest Rate', 
+  'interestRate', 
+  '_interestRate'],
 //12
-  ['declare', 'call', 'assign', 'initialize'],
+  ['declare', 
+  'call', 
+  'assign', 
+  'initialize'],
 //13
-  ['method', 'event handler', 'response', 'procedure'],
+  ['method', 
+  'event handler', 
+  'response', 
+  'procedure'],
 //14
-  ['document.write()', 'document.writeln()', 'window.alert()', 'window.popup()'],
+  ['document.write()', 
+  'document.writeln()', 
+  'window.alert()', 
+  'window.popup()'],
 //15
-  ['PDATA', 'CDATA', 'PCDATA', 'CPDATA'],
+  ['PDATA', 
+  'CDATA', 
+  'PCDATA', 
+  'CPDATA'],
 //custom
-  ['A little', 'Definitely', 'I\'m a Javascript God', 'Life is pain']
+  ['A little', 
+  'Definitely', 
+  'I\'m a Javascript God', 
+  'Life is pain']
 ];
 
 var chap1Correct = [
@@ -105,35 +153,80 @@ var chap1Correct = [
 
 var altFacts = [
 //1
-  ['A Web page is a document on the web.', 'A URI is a generic term for types of names and addresses on the web.', 'A link is a webpage element that contains a refreence to a specific webpage.', 'A network is a group or system of interconnected people or things.'],
+  ['A Web page is a document on the web.', 
+  'A URI is a generic term for types of names and addresses on the web.', 
+  'A link is a webpage element that contains a refreence to a specific webpage.', 
+  'A network is a group or system of interconnected people or things.'],
 //2
-  ['The department that coordinates all agencies and functions of the government concerned directly with national security and the United States Armed Forces', 'The World Wide Web Consortium is the main international standards organization for the World Wide Web.', 'Stanford University is a private research university in Stanford, California.', 'The United Nations is an intergovernmental organization tasked to promote international cooperation and to create and maintain international order.'],
+  ['The department that coordinates all agencies and functions of the government concerned directly with national security and the United States Armed Forces', 
+  'The World Wide Web Consortium is the main international standards organization for the World Wide Web.', 
+  'Stanford University is a private research university in Stanford, California.', 
+  'The United Nations is an intergovernmental organization tasked to promote international cooperation and to create and maintain international order.'],
 //3
-  ['Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.', 'SGML is not in itself a document language, but a description of how to specify one. It is metadata.', 'Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.', 'Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.'],
+  ['Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.', 
+  'SGML is not in itself a document language, but a description of how to specify one. It is metadata.', 
+  'Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.', 
+  'Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.'],
 //4
-  ['Extensible Hypertext Markup Language mirrors or extends versions of the widely used Hypertext Markup Language (HTML).', 'SGML is not in itself a document language, but a description of how to specify one. It is metadata.', 'Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.', 'Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.'],
+  ['Extensible Hypertext Markup Language mirrors or extends versions of the widely used Hypertext Markup Language (HTML).', 
+  'SGML is not in itself a document language, but a description of how to specify one. It is metadata.', 
+  'Extensible Markup Language (XML) is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.', 
+  'Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language.'],
 //5
-  ['There are no \"independent elements\" in HTML.', 'These elements are called empty or void and only have a start tag since they can\'t have any content.', 'There are no \"permanent elements\" in HTML.', 'There are no \"constant elements\" in HTML.'],
+  ['There are no \"independent elements\" in HTML.', 
+  'These elements are called empty or void and only have a start tag since they can\'t have any content.', 
+  'There are no \"permanent elements\" in HTML.', 
+  'There are no \"constant elements\" in HTML.'],
 //6
-  ['The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.', 'The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.', 'The <html> element defines the whole document.', 'The <script> element either contains scripting statements, or it points to an external script file through the src attribute.'],
+  ['The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.', 
+  'The <body> element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.', 
+  'The <html> element defines the whole document.', 
+  'The <script> element either contains scripting statements, or it points to an external script file through the src attribute.'],
 //7
-  ['Topology typically concerns the placement of parts and how they are arranged.', 'A double-system architecture would be the layering of two separate systems that interect with each other to achieve the same goal.', 'The two-tier system consists of a client and a server.', 'A wide area network is a computer network in which the computers connected may be far apart, generally having a radius of half a mile or more.'],
+  ['Topology typically concerns the placement of parts and how they are arranged.', 
+  'A double-system architecture would be the layering of two separate systems that interect with each other to achieve the same goal.',
+  'The two-tier system consists of a client and a server.', 
+  'A wide area network is a computer network in which the computers connected may be far apart, generally having a radius of half a mile or more.'],
 //8
-  ['The server locates records that match a request', 'The server handles heavy processing, such as calculations.', 'The server handles data storage.', 'The client provides the interface to the user'],
+  ['The server locates records that match a request', 
+  'The server handles heavy processing, such as calculations.', 
+  'The server handles data storage.', 
+  'The client provides the interface to the user'],
 //9
-  ['The processing tier handles processing and calculations in a three-tier client/server system.', 'The processing tier handles reading and writing of information tothe data storage tier in a three-tier client/server system.', 'The processing tier returns any information to the client server in a three-tier client/server system.', 'The server handles data storage in a three-tier client/server system.'],
+  ['The processing tier handles processing and calculations in a three-tier client/server system.', 
+  'The processing tier handles reading and writing of information tothe data storage tier in a three-tier client/server system.', 
+  'The processing tier returns any information to the client server in a three-tier client/server system.', 
+  'The server handles data storage in a three-tier client/server system.'],
 //10
-  ['Document is not a class and does not get capitalized.', 'This is the correct syntax, the object, document, is lowercase and the method, write, is lowercase.', 'Write is a method, it does not get capitalized.', 'The capitalization of document and write is incorrect syntax.'],
+  ['Document is not a class and does not get capitalized.', 
+  'This is the correct syntax, the object, document, is lowercase and the method, write, is lowercase.', 
+  'Write is a method, it does not get capitalized.', 
+  'The capitalization of document and write is incorrect syntax.'],
 //11
-  ['This syntax is valid as it starts with a ($) and contains no spaces.', 'The first character must be a letter, or an underscore (_), or a dollar sign ($). It cannot be a number.', 'This syntax is valid as it starts with a letter and contains no spaces.', 'This syntax is valid as it starts with an underscore (_) and contains no spaces.'],
+  ['This syntax is valid as it starts with a ($) and contains no spaces.', 
+  'The first character must be a letter, or an underscore (_), or a dollar sign ($). It cannot be a number.', 
+  'This syntax is valid as it starts with a letter and contains no spaces.', 
+  'This syntax is valid as it starts with an underscore (_) and contains no spaces.'],
 //12
-  ['After the declaration, the variable has no value.', 'You can only call a variable that has already been declared', 'You can assign a value to a variable only after it has been declared.', 'Initializing a variable declares it and assigns a value to it in one statement.'],
+  ['After the declaration, the variable has no value.', 
+  'You can only call a variable that has already been declared', 
+  'You can assign a value to a variable only after it has been declared.', 
+  'Initializing a variable declares it and assigns a value to it in one statement.'],
 //13
-  ['A method is a property containing a function definition.', 'Event handlers are code that are added inside the html tags, that execute JavaScript in response to a specific event.', 'Response is what a web server returns to a user in reply to a request', 'Procedure is a logical unit composed of individual statements, which is used to perform a specific task.'],
+  ['A method is a property containing a function definition.', 
+  'Event handlers are code that are added inside the html tags, that execute JavaScript in response to a specific event.', 
+  'Response is what a web server returns to a user in reply to a request', 
+  'Procedure is a logical unit composed of individual statements, which is used to perform a specific task.'],
 //14
-  ['document.write() will change what is written in the document object.', 'document.writeIn() will change what is written in the document object, and also add a new line after each statement.', 'window.alert() will create a dialog box with an OK button.', 'window.popup() is not a method in javascript.'],
+  ['document.write() will change what is written in the document object.', 
+  'document.writeIn() will change what is written in the document object, and also add a new line after each statement.', 
+  'window.alert() will create a dialog box with an OK button.', 
+  'window.popup() is not a method in javascript.'],
 //15
-  ['There is no PDATA to concern with in JavaScript', 'Character Data (CDATA) is a section of an HTML document that is not interpreted as markup.', 'Parsed Character Data (PCDATA) is a section of an HTML document that is interpreted as markup.', 'There is no CPDATA to concern with in JavaScript.']
+  ['There is no PDATA to concern with in JavaScript', 
+  'Character Data (CDATA) is a section of an HTML document that is not interpreted as markup.', 
+  'Parsed Character Data (PCDATA) is a section of an HTML document that is interpreted as markup.', 
+  'There is no CPDATA to concern with in JavaScript.']
 ];
 
 var squares = document.querySelectorAll('.square'); // The answer divs on page
