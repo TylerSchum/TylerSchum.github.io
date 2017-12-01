@@ -23,15 +23,17 @@ body {
   margin: 1.66%;
   box-shadow: 3px 3px 1px steelblue;
   border-radius: 20px;
-  transition: all .4s ease-in, font-size .1s ease, padding-top .1s ease, box-shadow .1s ease;
-  -webkit-transition: all .4s ease-in, font-size .1s ease-in, padding-top .1s ease, box-shadow .1s ease;;
-  -moz-transition: all .4s ease-in, font-size .1s ease-in, padding-top .1s ease, box-shadow .1s ease;;
-  -o-transition: all .4s ease-in,font-size .1s ease-in, padding-top .1s ease, box-shadow .1s ease;;
+  transition: all .2s ease-in, font-size .1s ease, padding-top .1s ease, box-shadow .1s ease;
+  -webkit-transition: all .2s ease-in, font-size .1s ease-in, padding-top .1s ease, box-shadow .1s ease;;
+  -moz-transition: all .2s ease-in, font-size .1s ease-in, padding-top .1s ease, box-shadow .1s ease;;
+  -o-transition: all .2s ease-in,font-size .1s ease-in, padding-top .1s ease, box-shadow .1s ease;;
   overflow: wrap;
 }
 
 .square:hover {
   cursor: pointer;
+  color: white;
+  background-color: steelblue;
 }
 
 .square:active {
