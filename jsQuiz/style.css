@@ -103,7 +103,7 @@ h2 {
   height: 95%;
 }
 
-.mode:hover, .mode:focus, #reset:hover, #reset:focus {
+.mode:hover, #reset:hover {
   background-color: white;
   color: rgb(60,90,120);
 }
