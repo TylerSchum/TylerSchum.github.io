@@ -115,7 +115,6 @@ h2 {
   background-color: white;
   height: 40px;
   width: 100%;
-  text-align: center;
   color: black;
 }
 
@@ -124,6 +123,10 @@ h2 {
   font-size: 1.4em;
   width: 30%;
   border-radius: 5px;
+  margin-left: 0;
+  padding-top: 2px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .selected {
