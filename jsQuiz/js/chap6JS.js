@@ -185,6 +185,7 @@ function winLose () {
     if ((clickedColor === currentCorrect) || (this.style.backgroundColor == 'rgb(250, 255, 250)')) { // check if answer is correct or has already been displayed as correct
       this.style.backgroundColor = 'rgb(250, 255, 250)';  // --------  Right Answer -----------------------------
       this.style.color = '#00bb00';
+      this.style.cursor = 'auto';
       this.style.border = 'solid #00bb00 3px';            // change square style to reflect correct answer
       if (document.documentElement.clientWidth < 500) {   // media query to change font-size based on viewport
         if (document.documentElement.clientWidth < 361) {
@@ -213,6 +214,7 @@ function winLose () {
       this.style.backgroundColor = 'rgb(255, 230, 230)';    // -------- Wrong Answer --------------------------------
       this.style.color = '#FF0000';
       this.style.border = 'solid #ff7777 3px';              //  change square style to reflect wrong answer
+      this.style.cursor = 'auto';
       if (document.documentElement.clientWidth < 500) {   // media query to change font-size based on viewport
         if (document.documentElement.clientWidth < 361) {
           this.style.fontSize = '1.2em';
@@ -247,6 +249,7 @@ function resetStyles(){ // resets all squares' styles to the default design
     squares[i].style.paddingTop = '';
     squares[i].style.paddingBottom = '';
     squares[i].style.fontSize = '';
+    squares[i].style.cursor = '';
   }
 }
 

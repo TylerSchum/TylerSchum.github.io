@@ -35,50 +35,50 @@ var chap8Questions = [
 
 var chap8Answers = [
 //1
-    ['parsing', 
-    'compiling', 
-    'rendering', 
+    ['parsing',
+    'compiling',
+    'rendering',
     'stripping'],
 //2
-    ['chars', 
-    'size', 
-    'width', 
+    ['chars',
+    'size',
+    'width',
     'length'],
 //3
-    ['{ }', 
-    '/ /', 
-    '( )', 
+    ['{ }',
+    '/ /',
+    '( )',
     '[ ]'],
 //4
     ['search()',
-    'subexpression()', 
-    'test()', 
+    'subexpression()',
+    'test()',
     'class()'],
 //5
-    ['$', 
-    '^', 
-    '\\', 
+    ['$',
+    '^',
+    '\\',
     '.'],
 //6
-    ['()', 
-    '[]', 
-    '[^]', 
+    ['()',
+    '[]',
+    '[^]',
     '-'],
 //7
-    ['anchor', 
-    'root', 
-    'metacharacter', 
+    ['anchor',
+    'root',
+    'metacharacter',
     'class'],
 //8
-    ['enclose the character in brackets \"[ ]\"', 
+    ['enclose the character in brackets \"[ ]\"',
     'enclose the character in parentheses \"( )\"',
     'precede the character with a slash \"/\"',
-    'precede the character wuth a backslash \"/\"'],
+    'precede the character wuth a backslash \"\\\"'],
 //9
-    ['/^1./.test(\"1.10\")',
-    '/^1\\./.test(\"1.10\")',
-    '/^1.$/.test(\"1.10\")',
-    '/^1\\.$/.test(\"1.10\")' ],
+    ['/^1./.test (\"1.10\")',
+    '/^1\\./.test (\"1.10\")',
+    '/^1.$/.test (\"1.10\")',
+    '/^1\\.$/.test (\"1.10\")' ],
 //10
     ['{2}',
     '{2,}',
@@ -110,9 +110,9 @@ var chap8Answers = [
     'Array',
     'Number'],
 //custom
-    ['A little', 
-    'Definitely', 
-    'I\'m a Javascript God', 
+    ['A little',
+    'Definitely',
+    'I\'m a Javascript God',
     'Life is pain']
 ];
 
@@ -132,7 +132,7 @@ var chap8Correct = [
 //7
     'anchor',
 //8
-    'precede the character wuth a backslash \"/\"',
+    'precede the character wuth a backslash \"\\\"',
 //9
     '/^1\\.$/.test(\"1.10\")',
 //10
@@ -188,14 +188,14 @@ var altFacts = [
     'Metacharacters are special characters that define the pattern matching rules in a regular expression.',
     'In JavaScript classes serve as blueprints for new objects.'],
 //8
-    ['By enclosing the character in brackets, you create a character class consisting only of that character.', 
-    'By enclosing the character in parentheses, you specify a subexpression consisting of that character.', 
-    'By preceding a character with a slash, you would begin or end a regExp.', 
+    ['By enclosing the character in brackets, you create a character class consisting only of that character.',
+    'By enclosing the character in parentheses, you specify a subexpression consisting of that character.',
+    'By preceding a character with a slash, you would begin or end a regExp.',
     'By preceding a character with a backslash, you specify that the character should be interpreted literally.'],
 //9
-    ['The first characters will be a 1 followed by any character, which is true.', 
-    'The first character will be a 1 followed by a ., which is true.', 
-    'The last characters will be a 1 followed by any character, which is true.', 
+    ['The first characters will be a 1 followed by any character, which is true.',
+    'The first character will be a 1 followed by a ., which is true.',
+    'The last characters will be a 1 followed by any character, which is true.',
     'The last characters will be a 1 followed by a ., which is not true.'],
 //10
     ['This would state that the preceding character should be repeated exactly 2 times.',
@@ -277,6 +277,7 @@ function winLose() {
             this.style.backgroundColor = 'rgb(250, 255, 250)';  // --------  Right Answer -----------------------------
             this.style.color = '#00bb00';
             this.style.border = 'solid #00bb00 3px';            // change square style to reflect correct answer
+            this.style.cursor = 'auto';
             if (document.documentElement.clientWidth < 500) {   // media query to change font-size based on viewport
                 if (document.documentElement.clientWidth < 361) {
                     this.style.fontSize = '1.2em';
@@ -304,6 +305,7 @@ function winLose() {
             this.style.backgroundColor = 'rgb(255, 230, 230)';    // -------- Wrong Answer --------------------------------
             this.style.color = '#FF0000';
             this.style.border = 'solid #ff7777 3px';              //  change square style to reflect wrong answer
+            this.style.cursor = 'auto';
             if (document.documentElement.clientWidth < 500) {   // media query to change font-size based on viewport
                 if (document.documentElement.clientWidth < 361) {
                     this.style.fontSize = '1.2em';
@@ -338,6 +340,7 @@ function resetStyles() { // resets all squares' styles to the default design
         squares[i].style.paddingTop = '';
         squares[i].style.paddingBottom = '';
         squares[i].style.fontSize = '';
+        squares[i].style.cursor = '';
     }
 }
 
