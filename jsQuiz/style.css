@@ -107,7 +107,7 @@ h2 {
   height: 95%;
 }
 
-.mode:hover, #reset:hover {
+.mode:hover {
   background-color: white;
   color: rgb(60,90,120);
 }
@@ -120,11 +120,20 @@ h2 {
 }
 
 #reset {
-  height: 68%;
+  display: inline-block;
   font-size: 1.4em;
+  height: 78%;
   border-radius: 5px;
-  padding-left: 3%;
-  padding-right: 3%;
+  margin-left: 3%;
+  /*padding-left: 3%;
+  padding-right: 3%;*/
+  border: 3px solid steelblue;
+  box-sizing: border-box;
+}
+
+#reset:hover {
+  color: white;
+  background-color: steelblue;
 }
 
 .selected {
@@ -209,6 +218,15 @@ p{
   margin-left: 1%;
 }
 
+#question {
+  background-color: steelblue;
+  color: white;
+  padding: 10px 5px;
+  margin-top: 0;
+  max-width: 900px;
+  border-radius: 0 0 5px 5px;
+}
+
 
 @media all and (max-width: 500px) {
   .squares {
@@ -240,8 +258,11 @@ p{
   }
 
   #reset {
-    font-size: .8em;
-    width: 35%;
+    font-size: .9em;
+    line-height: .7em;
+    width: 38%;
+    height: 70%;
+    padding-top: 10px;
   }
 
   #message {
