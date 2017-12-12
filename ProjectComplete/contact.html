@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hunter Recording Studios Inc.</title>
+    <!-- Bootstrap 3.3.7 CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Bootstrap 3.3.7 default theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- Google Fonts CSS file -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Yellowtail" rel="stylesheet">
+    <!-- Local CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Booststrap Navbar -->
+    <nav class="navbar navbar-default" id='top'>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    Hunter Recording Studios Inc.</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="studios.html">Studios</a>
+                    </li>
+                    <li>
+                        <a href="location.html">Location</a>
+                    </li>
+                    <li class="active">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class='container-fluid'>
+        <!-- Customer Service pic -->
+        <img src="images/customerService.jpg" alt="customer service team" class='imageFitsYellow'>
+        <div class='studioArticlesYellow'>
+            <!-- Hours and social media -->
+            <div id='contactSection'>
+                <h3 class="articleHeaders">
+                    Contact Us
+                </h3>
+                <p>Hours of Operation</p>
+                <ul>
+                    <li>Monday-Friday: 11am-10pm</li>
+                    <li>Saturday: 10am-8pm</li>
+                    <li>Sunday: 10am-8pm</li>
+                </ul>
+                <p>
+                    <a href='mailto:Tyler@HunterRecordingStudios.com'>Tyler@HunterRecordingStudios.com</a>
+                </p>
+                <p>
+                    <a href='tel:1-516-555-5555'>(516)555-5555</a>
+                </p>
+                <div id='logoSection'>
+                    <a href='http://www.facebook.com' class='logos'>
+                        <img src="images/facebook.png" alt="facebook logo">
+                    </a>
+                    <a href="http://www.twitter.com" class='logos'>
+                        <img src="images/twitter.png" alt="twitter logo">
+                    </a>
+                    <a href="http://www.linkedin.com" class='logos'>
+                        <img src="images/linkedin.png" alt="linkedin logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Form for contact info submission -->
+        <div class='studioArticlesOrange'>
+            <h3 class='articleHeaders'>
+                We'll Contact You
+            </h3>
+            <form onsubmit="return validateForm()">
+                <input type="text" name="fname" id="fname" placeholder="First Name" novalidate>
+                <input type="text" name="lname" id="lname" placeholder="Last Name" novalidate>
+                <br>
+                <input type="email" name="email" id="email" placeholder="email@email.com" novalidate>
+                <br>
+                <input type="phone" name="phone" id="phone" placeholder="123-456-7890" novalidate>
+                <br>
+                <input type="submit" value="Submit" id="submit" novalidate>
+            </form>
+        </div>
+    </div>
+    <footer id='footerSection'>
+        <a href="#top">Back to Top</a>
+    </footer>
+    <!-- JQuery 3.2.1  -->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Local JS file -->
+    <script src='scriptContact.js'></script>
+</body>
+
+</html>

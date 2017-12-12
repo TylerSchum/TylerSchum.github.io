@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hunter Recording Studios Inc.</title>
+    <!-- Bootstrap 3.3.7 CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Bootstrap 3.3.7 default theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- Google Fonts CSS file -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Yellowtail" rel="stylesheet">
+    <!-- Local CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Booststrap Navbar -->
+    <nav class="navbar navbar-default" id='top'>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    Hunter Recording Studios Inc.</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="studios.html">Studios</a>
+                    </li>
+                    <li>
+                        <a href="location.html">Location</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class='container-fluid'>
+        <!-- Price calculator -->
+        <div class='studioArticlesYellow'>
+            <h3 class='articleHeaders'>Pricing Estimator</h3>
+            <form onsubmit="return false">
+                <fieldset>
+                    <input type="number" id="hours" name="hours" value="hours" min="1" max="10" placeholder='Hours'>
+                    <br>
+                    <input type="checkbox" name="engineer" id="engineer">
+                    <label for="engineer">Professional Sound Engineer Service?</label>
+                </fieldset>
+                <fieldset id='radio'>
+                    <h4>Select a studio</h4>
+                    <label>
+                        <input type="radio" name="studio" value="classical" />Classical Studio</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="studio" value="jazz" />Jazz Studio</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="studio" value="hipHop">Hip-Hop</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="studio" value="vocals">Vocals Studio</label>
+                    <br>
+                    <label>
+                        <input type="radio" name="studio" value="editing">Editing Room</label>
+                </fieldset>
+            </form>
+            <p id='priceField'>Please fill out the above form completely to see a price estimate.</p>
+        </div>
+        <img src="images/soundboard.jpg" alt="big soundboard" class='imageFits'>
+        <!-- Pricing Details -->
+        <div class='studioArticlesOrange'>
+            <h3 class="articleHeaders">Hourly Rates</h3>
+            <p>Renting one of our professional Sound Engineers is an additional $80 per hour.</p>
+            <br>
+            <p>Editing <span class='desktopInline'>Room </span>- $40</p>
+            <p>Vocal <span class='desktopInline'>Recording Room </span>- $100</p>
+            <p>Classical <span class='desktopInline'>Recording Room </span>- $140</p>
+            <p>Jazz <span class='desktopInline'>Recording Room </span>- $140</p>
+            <p>Hip-Hop <span class='desktopInline'>Recording Room </span>- $200</p>
+        </div>
+    </div>
+    <footer id='footerSection'>
+        <a href="#top">Back to Top</a>
+    </footer>
+    <!-- JQuery 3.2.1  -->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Local JS file -->
+    <script src='scriptpricing.js'></script>
+</body>
+
+</html>

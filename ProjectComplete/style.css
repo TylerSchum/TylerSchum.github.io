@@ -1,0 +1,672 @@
+/* Tyler Schum */
+/* style.css - Group Project */
+body {
+    background-color: #f7b733;
+    width: 100%;
+}
+
+.navbar {
+    margin: 0;
+}
+
+/* Navbar brand resize */
+.navbar-brand {
+    position: absolute;
+    font-size: 14px;
+}
+
+/* Navbar background color and border removal */
+.navbar-default {
+    background: #fc4a1a;
+    border: none;
+    border-radius: 0;
+}
+
+/* Fix to remove negative margin in smaller viewport */
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Remove border and add specified margins */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: none;
+    margin-top: -1px;
+    margin-bottom: -2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Remove focus and hover changes */
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #fc4a1a;
+}
+
+/* Set colors for the current page */
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background: #f7b733;
+    color: #fc4a1a;
+}
+
+/* Set colors for hovering navbar elements */
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+    background: #f7b733;
+    color: #fc4a1a;
+}
+
+/* Fix ugly text in navbar */
+.navbar-default .navbar-nav>li>a {
+    color: #f7b733;
+    text-shadow: none;
+}
+
+/* border color for navbar hamburger */
+.navbar-default .navbar-toggle {
+    border-color: #f7b733;
+}
+
+/* stripe color for navbar hamburger */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f7b733;
+}
+
+/* text color for navbar Brand */
+.navbar-default .navbar-brand {
+    color: #f7b733;
+}
+
+/* Remove color changes on hover of navbar brand */
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: #f7b733;
+    text-shadow: none;
+}
+
+/* properties for the parallax image */
+.parallax {
+    background-image: url("images/soundboardSliders.png");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Page wrapper for index.html */
+#contentWrapper {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #f7b733;
+}
+
+/* Header for each article */
+.articleHeaders {
+    margin-top: 0;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #f7b733;
+}
+
+/* Base design for anchor tags on hover */
+a:focus, a:hover, a:visited {
+    color: #f7b733;
+    text-decoration: underline;
+}
+
+/* Headers for yellow*/
+.headerLinks {
+    color: #f7b733;
+}
+
+
+.headerLinks:focus, .headerLinks:hover {
+    color: #f7b733;
+    text-decoration-color: #f7b733;
+}
+
+.headerLinks:visited {
+    color: #f7b733;
+    text-decoration-color: #f7b733;
+}
+
+/* Headers for orange*/
+.studioHeader {
+    color: #fc4a1a;
+}
+
+.studioHeader:focus, .studioHeader:hover, .studioHeader:visited {
+    color: #fc4a1a;
+    text-decoration-color: #fc4a1a;
+}
+
+/* ------------ Page Header Changes ---------- */
+.container-fluid .page-header {
+    background-image: url('images/dudeRecording.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    height: 300px;
+    margin: 0 auto;
+    border-bottom: none;
+}
+
+.page-header h1 {
+    font-family: 'Roboto',
+    sans-serif;
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-top: 170px;
+    color: #f7b733;
+}
+
+.page-header small {
+    font-family: 'Yellowtail',
+    cursive;
+    color: #f7b733;
+}
+
+/* ------------ Jumbotron Changes ---------- */
+.container-fluid .jumbotron {
+    padding-top: 20px;
+    padding-bottom: 0;
+    background-color: #f7b733;
+    background: -webkit-linear-gradient(to top, #f7b733, #fc4a1a);
+    background: linear-gradient(to top, #f7b733, #fc4a1a);
+}
+
+.container-fluid .jumbotron {
+    border-radius: 0;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+/* adds an indent to text */
+.indent {
+    text-indent: 15px;
+}
+
+/* Studio section gradient and padding */
+#studioSection {
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #fc4a1a;
+    background: -webkit-linear-gradient(to top, #fc4a1a, #f7b733);
+    background: linear-gradient(to top, #fc4a1a, #f7b733);
+}
+
+#studioSection h3 {
+    padding-top: 20px;
+    color: #fc4a1a;
+}
+
+/* Container for thumbnails */
+#StudioImages {
+    max-width: 100%;
+    margin: 0 auto -1;
+}
+
+.row {
+    margin: 0;
+}
+
+/* add margin to bootstrap columns */
+.col-xs-6 {
+    width: 48%;
+    margin: 1%;
+}
+
+.thumbnail {
+    width: 100%;
+    max-height: 300px;
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.thumbnail img {
+    height: 70px;
+    width: 100%;
+}
+
+/* padding and margin for address */
+.definitions {
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+/* location section styling and gradient */
+#locationSection {
+    background-color: #f7b733;
+    background: -webkit-linear-gradient(to top, #f7b733, #fc4a1a);
+    background: linear-gradient(to top, #f7b733, #fc4a1a);
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: -1px;
+}
+
+/* div containing google maps map */
+#map {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+}
+
+#map img {
+    width: 100%;
+    height: 100%;
+}
+
+/* div containing last 2 sections with one combined gradient */
+#finalGradient {
+    background-color: #fc4a1a;
+    background: -webkit-linear-gradient(to top, #fc4a1a, #f7b733);
+    background: linear-gradient(to top, #fc4a1a, #f7b733);
+}
+
+/* pricing section changes */
+#pricingSection {
+    padding-top: 20px;
+    margin-top: -1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#pricingSection h3 {
+    color: #fc4a1a;
+}
+
+#pricingSection h4 {
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+label {
+    margin-top: 10px;
+    height: 1.5em;
+}
+
+fieldset {
+    margin-left: 30px;
+}
+
+/* display of price or error message */
+#priceField {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+/* Contact section styling */
+#contactSection {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contactSection p {
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+#contactSection ul {
+    list-style-type: none;
+    margin-top: 0;
+}
+
+#contactSection img {
+    height: 40px;
+    width: 40px;
+}
+
+#contactSection a {
+    color: #f7b733;
+    font-size: .8em;
+}
+
+/* social media section */
+#logoSection {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.logos {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#footerSection {
+    background-color: #fc4a1a;
+    margin-bottom: 0;
+    height: 60px;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+}
+
+#footerSection a {
+    border: 2px solid #f7b733;
+    border-radius: 5px;
+    padding: 5px;
+    color: #f7b733;
+    font-size: 24px;
+    line-height: 60px;
+    transition: all .1s ease;
+}
+
+#footerSection a:active, #footerSection a:hover {
+    box-shadow: none;
+    text-decoration: none;
+    background-color: #f7b733;
+    color: #fc4a1a;
+}
+
+/* class to display elements for larger screens as block */
+.desktop {
+    display: none;
+}
+
+/* class to display elements for larger screens as inline */
+.desktopInline {
+    display: none;
+}
+
+/* Larger images on studio.html */
+.studioImages {
+    margin: 30px 5%;
+    width: 90%;
+}
+
+/* Container for gradient from orange -> yellow going down */
+.studioArticlesOrange {
+    background-color: #f7b733;
+    background: -webkit-linear-gradient(to top, #f7b733, #fc4a1a);
+    background: linear-gradient(to top, #f7b733, #fc4a1a);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Container for gradient from yellow -> orange going down */
+.studioArticlesYellow {
+    background-color: #fc4a1a;
+    background: -webkit-linear-gradient(to top, #fc4a1a, #f7b733);
+    background: linear-gradient(to top, #fc4a1a, #f7b733);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.studioArticlesOrange p, .studioArticlesYellow p {
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.studioArticlesYellow h3 {
+    color: #fc4a1a;
+}
+
+.studioArticlesOrange h2 {
+    margin-top: 0;
+}
+
+/* Class for full screen images with an orange background */
+.imageFits {
+    background-color: #fc4a1a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/* Class for full screen images with a yellow background */
+.imageFitsYellow {
+    background-color: #f7b733;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+/* styling for first name and last name boxes on contact.html */
+#fname, #lname {
+    width: 100px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+/* styling for email and phone boxes on ontact.html */
+#email, #phone {
+    margin-left: 5px;
+    margin-bottom: 20px;
+    width: 210px;
+}
+
+/* submit button margin */
+#submit {
+    margin-left: 5px;
+}
+
+/* confirmation page background to fill screen */
+#confirmBackground {
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    background-color: #fc4a1a;
+    background: -webkit-linear-gradient(to top, #fc4a1a, #f7b733);
+    background: linear-gradient(to top, #fc4a1a, #f7b733);
+}
+
+/* div containing the thank you message */
+#confirmBox {
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+#confirmBox h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#confirmBox h5 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#confirmBackground img {
+    position: fixed;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* footer on confirmation page, stays at bottom */
+.baseFooter {
+    position: absolute;
+    bottom: 0;
+}
+
+/* ----------------- Correct some corrections for tiny tiny phones ---------------------- */
+@media screen and (min-width: 360px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .thumbnail img {
+        height: 100px;
+        width: 100%;
+    }
+}
+
+/* ------------------- Correct more junk corrections for tiny tiny phones ---------------------- */
+@media screen and (min-width: 400px) {
+    .thumbnail img {
+        height: 140px;
+    }
+}
+
+/* -----------------------First major jump at 520px--------------------------------------------------- */
+@media screen and (min-width: 520px) {
+    .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* show block elements for larger viewport */
+    .desktop {
+        display: block;
+    }
+
+    /* show inline elements for larger viewports */
+    .desktopInline {
+        display: inline;
+    }
+
+    /* hide elements shown only on smaller viewports */
+    .mobile {
+        display: none;
+    }
+
+    /* fix for buggy navbar behavior with large brand */
+    .navbar-nav {
+        display: block;
+        float: inherit;
+    }
+
+    .articleHeaders {
+        font-size: 30px;
+    }
+
+    .container .jumbotron,
+    .container-fluid .jumbotron {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .page-header h1 {
+        font-size: 2.5em;
+        margin-left: 2em;
+        margin-top: 260px;
+    }
+
+    .container-fluid .page-header {
+        height: 450px;
+    }
+
+    .parallax {
+        height: 600px;
+    }
+
+    .thumbnail {
+        max-height: 500px;
+    }
+
+    .thumbnail img {
+        height: 200px;
+    }
+
+    #map {
+        height: 500px;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    #fname,
+    #lname {
+        width: 100px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+
+    #email,
+    #phone {
+        margin-left: 40px;
+        margin-bottom: 20px;
+        width: 245px;
+    }
+
+    #submit {
+        margin-left: 40px;
+    }
+
+    #logoSection {
+        padding-top: 20px;
+        text-align: left;
+    }
+}
+/* --------------------- 768px change, navbar float added and image sizes increase ---------------------- */
+@media screen and (min-width: 768px) {
+    
+    .navbar-nav {
+        display: block;
+        float: right;
+    }
+
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: 0;
+    }
+
+    .container-fluid .page-header {
+        background-image: url('images/dudeRecording.jpg');
+        background-position: left;
+        background-repeat: no-repeat;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+
+    .page-header h1 {
+        font-size: 2.5em;
+        margin-left: 7.4em;
+        margin-top: 285px;
+    }
+
+    /* set a max width for container-fluids that are direct children of the body*/
+    body>.container-fluid {
+        max-width: 960px;
+    }
+
+    /* max width for div containing navbar elements */
+    .navbar .container-fluid {
+        max-width: 960px;
+    }
+
+    .logos {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+/* -------------------------- at width 1010px add margins back onto navbar to get proper alignment ------------------ */
+    @media screen and (min-width: 1010px) {
+
+    .navbar>.container .navbar-brand,
+    .navbar>.container-fluid .navbar-brand {
+        margin-left: -15px;
+    }
+
+    .navbar-nav {
+        margin-right: -15px;
+    }
+}
