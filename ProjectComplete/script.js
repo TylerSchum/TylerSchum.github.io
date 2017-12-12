@@ -24,6 +24,16 @@ function createMap(position) {
         map: map,
         name: 'Hunter Recording Studios'
     });
+    setTimeout(checkMapFail, 2000);
+}
+
+// function to check if google maps failed key check
+function checkMapFail() {
+    var mapDiv = $('#map')
+    // the fail creates 6 divs instead of the APIs normal 82
+    if (mapDiv.find('div').length === 6) {
+        fail();
+    }
 }
 
 // fallback image of map if user denies location access
