@@ -293,6 +293,10 @@ p {
     margin-left: 10px;
 }
 
+#hours {
+    width: 3em;
+}
+
 input[type=checkbox], input[type=radio] {
     margin-top: 6px;
     margin-right: 10px;
