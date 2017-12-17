@@ -92,7 +92,7 @@
     </div>
     <!-- Studio Section -->
     <div id='studioSection'>
-        <a href='studios.html' class='headerlinks studioHeader'><h3 class='articleHeaders'>
+        <a href='studios.html' class='headerLinks studioHeader'><h3 class='articleHeaders'>
             State-of-the-Art Studios
         </h3></a>
         <p class='desktop indent'>Let me tell you something else. Excuse me. Yeah, man. Where's my goddamn money, you bum?! Ha ha ha., Because, uh...it looks
@@ -143,7 +143,7 @@
     </div>
     <!-- Location Section -->
     <div id='locationSection'>
-        <a href='location.html' class='headerlinks'><h3 class='articleHeaders'>
+        <a href='location.html' class='headerLinks'><h3 class='articleHeaders'>
             Location
         </h3></a>
         <p class='definitions'> 3632 Hempstead Turnpike<br>Levittown, NY 11756</p>
@@ -157,41 +157,45 @@
         <!-- Pricing Section -->
         <div id='pricingSection'>
             <a href='pricing.html' class='headerLinks studioHeader'><h3 class='articleHeaders'>Pricing</h3></a>
-            <form onsubmit="return false">
-                <fieldset>
-                    <input type="number" id="hours" name="hours" min="1" max="10" placeholder='10'>
-                    <label for="hours">Hours</label><br>
-                    <input type="checkbox" name="engineer" id="engineer">
-                    <label for="engineer">Professional Sound Engineer Service?</label>
-                </fieldset>
-                <fieldset id='radio'>
-                    <h4>Select a studio</h4>
-                    <label><input type="radio" name="studio" value="classical"/>Classical Studio</label>
-                    <br>
-                    <label><input type="radio" name="studio" value="jazz"/>Jazz Studio</label>
-                    <br>
-                    <label><input type="radio" name="studio" value="hipHop">Hip-Hop</label>
-                    <br>
-                    <label><input type="radio" name="studio" value="vocals">Vocals Studio</label>
-                    <br>
-                    <label><input type="radio" name="studio" value="editing">Editing Room</label>
-                </fieldset>
-            </form>
-            <p id='priceField'>Please fill out the above form completely to see a price estimate.</p>
+            <div class='container-fluid pushed'>
+                <form onsubmit="return false">
+                    <fieldset>
+                        <input type="number" id="hours" name="hours" min="1" max="10" placeholder='10'>
+                        <label for="hours">Hours</label><br>
+                        <input type="checkbox" name="engineer" id="engineer">
+                        <label for="engineer">Professional Sound Engineer Service?</label>
+                    </fieldset>
+                    <fieldset id='radio'>
+                        <h4>Select a studio</h4>
+                        <label><input type="radio" name="studio" value="classical"/>Classical Studio</label>
+                        <br>
+                        <label><input type="radio" name="studio" value="jazz"/>Jazz Studio</label>
+                        <br>
+                        <label><input type="radio" name="studio" value="hipHop">Hip-Hop</label>
+                        <br>
+                        <label><input type="radio" name="studio" value="vocals">Vocals Studio</label>
+                        <br>
+                        <label><input type="radio" name="studio" value="editing">Editing Room</label>
+                    </fieldset>
+                </form>
+                <p id='priceField'>Please fill out the above form completely to see a price estimate.</p>
+            </div>
         </div>
         <!-- Contact Section -->
         <div id='contactSection'>
             <a href='contact.html' class='headerLinks'><h3 class="articleHeaders">
                 Contact Us
             </h3></a>
-            <p>Hours of Operation</p>
-            <ul>
-                <li>Monday-Friday: 11am-10pm</li>
-                <li>Saturday: 10am-8pm</li>
-                <li>Sunday: 10am-8pm</li>
-            </ul>
-            <p><a href='mailto:Tyler@HunterRecordingStudios.com'>Tyler@HunterRecordingStudios.com</a></p>
-            <p><a href='tel:1-516-555-5555'>(516)555-5555</a></p>
+            <div class='container-fluid center'>
+                <p>Hours of Operation</p>
+                <ul>
+                    <li>Monday-Friday: 11am-10pm</li>
+                    <li>Saturday: 10am-8pm</li>
+                    <li>Sunday: 10am-8pm</li>
+                </ul>
+                <p><a href='mailto:Tyler@HunterRecordingStudios.com'>Tyler@HunterRecordingStudios.com</a></p>
+                <p><a href='tel:1-516-555-5555'>(516)555-5555</a></p>
+            </div>
             <div id='logoSection'>
                 <a href='http://www.facebook.com' class='logos'><img src="images/facebook.png" alt="facebook logo"></a>
                 <a href="http://www.twitter.com" class='logos'><img src="images/twitter.png" alt="twitter logo"></a>

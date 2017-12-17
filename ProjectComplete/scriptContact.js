@@ -12,11 +12,13 @@ function validateEmail() {
     if (emailCheck.test(emailInput.val()) === false) {
         // set email input to be a red hue
         $('#email').css({'background-color': 'rgb(250, 210, 210)'});
+        $('#emailErr').css('visibility', 'visible');
         emailValidity = false;
         
     } else {
         // remove any email error styling
         $('#email').css({'background-color': ''});
+        $('#emailErr').css('visibility', 'hidden');
         emailValidity = true;
     }
 }
@@ -27,9 +29,11 @@ function validatefName() {
     // check for an empty name box
     if (fnameInput.val() === '') {
         $('#fname').css({'background-color': 'rgb(250, 210, 210)'});
+        $('#fnameErr').css('visibility', 'visible');
         fnameValidity = false;
     } else {
         $('#fname').css({ 'background-color': '' });
+        $('#fnameErr').css('visibility', 'hidden');
         fnameValidity = true;
     }
 }
@@ -40,9 +44,11 @@ function validatelName() {
     // check for an empty box
     if (lnameInput.val() === '') {
         $('#lname').css({'background-color': 'rgb(250, 210, 210)'});
+        $('#lnameErr').css('visibility', 'visible');
         lnameValidity = false;
     } else {
         $('#lname').css({ 'background-color': '' });
+        $('#lnameErr').css('visibility', 'hidden');
         lnameValidity = true;
     }
 }
@@ -54,12 +60,44 @@ function validatePhone() {
     // check phone input for values matching normal phone user input
     if (phoneCheck.test(phoneInput.val()) === false) {
         $('#phone').css({ 'background-color': 'rgb(250, 210, 210)' });
+        $('#phoneErr').css('visibility', 'visible');
         phoneValidity = false;
     } else {
         $('#phone').css({ 'background-color': '' });
+        $('#phoneErr').css('visibility', 'hidden');
         phoneValidity = true;
     }
 }
+
+$('#lname').on('focusin', function(){
+    $('#lname').css({ 'background-color': '' });
+    $('#lnameErr').css('visibility', 'hidden');
+});
+
+$('#fname').on('focusin', function(){
+    $('#fname').css({ 'background-color': '' });
+    $('#fnameErr').css('visibility', 'hidden');
+});
+
+$('#phone').on('focusin', function(){
+    $('#phone').css({ 'background-color': '' });
+    $('#phoneErr').css('visibility', 'hidden');
+});
+
+$('#email').on('focusin', function(){
+    $('#email').css({ 'background-color': '' });
+    $('#emailErr').css('visibility', 'hidden');
+});
+
+
+
+$('#email').on('focusout', validateEmail);
+
+$('#phone').on('focusout', validatePhone); 
+
+$('#fname').on('focusout', validatefName);
+
+$('#lname').on('focusout', validatelName);
 
 // function that checks all form validity
 function validateForm() {

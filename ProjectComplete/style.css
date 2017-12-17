@@ -127,6 +127,7 @@ a:focus, a:hover, a:visited {
 /* Headers for yellow*/
 .headerLinks {
     color: #f7b733;
+    text-align: center;
 }
 
 
@@ -311,6 +312,13 @@ fieldset {
     margin-left: 30px;
 }
 
+    .container-fluid.center, .container-fluid.pushed {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /* display of price or error message */
 #priceField {
     margin-top: 20px;
@@ -447,20 +455,40 @@ fieldset {
 /* styling for first name and last name boxes on contact.html */
 #fname, #lname {
     width: 100px;
-    margin-bottom: 20px;
     margin-left: 5px;
 }
 
 /* styling for email and phone boxes on ontact.html */
 #email, #phone {
     margin-left: 5px;
-    margin-bottom: 20px;
     width: 210px;
 }
 
 /* submit button margin */
 #submit {
     margin-left: 5px;
+}
+
+.errDiv {
+    height: 2em;
+    color: #bb2222;
+    margin-left: 20px;
+}
+
+#fnameErr {
+    visibility: hidden;
+}
+
+#lnameErr {
+    visibility: hidden;
+}
+
+#emailErr {
+    visibility: hidden;
+}
+
+#phoneErr {
+    visibility: hidden;
 }
 
 /* confirmation page background to fill screen */
@@ -597,18 +625,30 @@ fieldset {
         margin-right: 2%;
     }
 
+    .container-fluid.pushed {
+        margin-left: 10%;
+    }
+
+    .container-fluid.center {
+        text-align: center;
+        margin: 0 auto;
+    }
+
     #fname,
     #lname {
         width: 100px;
-        margin-bottom: 20px;
         margin-left: 40px;
     }
 
     #email,
     #phone {
         margin-left: 40px;
-        margin-bottom: 20px;
         width: 245px;
+    }
+
+    .errDiv {
+        margin-left: 45px;
+        line-height: 2em;
     }
 
     #submit {
@@ -617,7 +657,12 @@ fieldset {
 
     #logoSection {
         padding-top: 20px;
-        text-align: left;
+        text-align: center;
+    }
+
+    .logos {
+        margin-right: 8%;
+        margin-left: 8%;
     }
 }
 /* --------------------- 768px change, navbar float added and image sizes increase ---------------------- */
@@ -641,6 +686,14 @@ fieldset {
         margin: 0 auto;
     }
 
+    .headerLinks {
+        text-align: left;
+    }
+
+    .articleHeaders {
+        margin-left: 40px;
+    }
+
     .page-header h1 {
         font-size: 2.5em;
         margin-left: 7.4em;
@@ -658,8 +711,8 @@ fieldset {
     }
 
     .logos {
-        margin-left: 3%;
-        margin-right: 3%;
+        margin-left: 8%;
+        margin-right: 8%;
     }
 }
 /* -------------------------- at width 1010px add margins back onto navbar to get proper alignment ------------------ */
